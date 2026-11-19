@@ -1,0 +1,1382 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>挠脚心 - 官方影像社区,欢乐软痒治愈视频品牌官网</title>
+<meta name="description" content="挠脚心官网是一家专注于欢乐治愈类影像内容的视频品牌官方平台，以软痒趣味内容连接创作者与用户，持续运营高品质原创视频社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f97316'/%3E%3Cpath d='M14 42c0-12 8-22 18-22s18 10 18 22c0 6-8 10-18 10S14 48 14 42z' fill='%23fff7ed'/%3E%3Ccircle cx='26' cy='34' r='3.5' fill='%23f97316'/%3E%3Ccircle cx='38' cy='34' r='3.5' fill='%23f97316'/%3E%3Cpath d='M25 44q7 5 14 0' stroke='%23f97316' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --tx-bg:#fffaf3;
+  --tx-ink:#3b2416;
+  --tx-ink-soft:#7a5b45;
+  --tx-main:#f97316;
+  --tx-main-deep:#c2410c;
+  --tx-amber:#fbbf24;
+  --tx-cream:#fff1e0;
+  --tx-card:#ffffff;
+  --tx-line:#f0dcc6;
+  --tx-shadow:0 10px 30px rgba(194,65,12,.10);
+  --tx-radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--tx-bg);color:var(--tx-ink);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.tx-wrap{width:min(1180px,92vw);margin:0 auto}
+.tx-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.tx-sticky{position:sticky;top:0;z-index:60}
+.tx-announce{
+  background:linear-gradient(90deg,#c2410c,#f97316 45%,#fb923c);
+  color:#fff7ed;font-size:13.5px;letter-spacing:.2px;
+}
+.tx-announce .tx-wrap{display:flex;align-items:center;gap:14px;padding:8px 0;overflow:hidden}
+.tx-announce-tag{
+  flex:none;background:#fff7ed;color:#c2410c;font-weight:800;
+  font-size:11.5px;padding:2px 9px;border-radius:999px;letter-spacing:1px;
+}
+.tx-announce-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.tx-announce-text b{color:#fde68a}
+.tx-announce-link{flex:none;font-weight:700;border-bottom:1px dashed #fde68a;padding-bottom:1px}
+.tx-header{background:rgba(255,250,243,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--tx-line)}
+.tx-header .tx-wrap{display:flex;align-items:center;gap:26px;padding:14px 0}
+.tx-logo{display:flex;align-items:center;gap:10px;flex:none}
+.tx-logo-mark{
+  width:42px;height:42px;border-radius:13px;flex:none;
+  background:radial-gradient(circle at 30% 25%,#fdba74,#f97316 60%,#c2410c);
+  display:grid;place-items:center;color:#fff;font-weight:900;font-size:19px;
+  box-shadow:0 6px 16px rgba(249,115,22,.35);
+}
+.tx-logo-txt strong{display:block;font-size:19px;letter-spacing:1px;line-height:1.2}
+.tx-logo-txt span{display:block;font-size:11px;color:var(--tx-ink-soft);letter-spacing:2px}
+.tx-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.tx-nav a{
+  padding:8px 13px;border-radius:10px;font-size:14.5px;color:var(--tx-ink-soft);
+  font-weight:600;transition:.22s;
+}
+.tx-nav a:hover{background:var(--tx-cream);color:var(--tx-main-deep)}
+.tx-header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.tx-search{position:relative}
+.tx-search input{
+  width:190px;padding:9px 36px 9px 14px;border-radius:999px;font-size:13.5px;
+  border:1.5px solid var(--tx-line);background:#fff;color:var(--tx-ink);outline:none;transition:.22s;
+}
+.tx-search input:focus{border-color:var(--tx-main);width:230px;box-shadow:0 0 0 4px rgba(249,115,22,.12)}
+.tx-search button{
+  position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;color:var(--tx-main-deep);
+}
+.tx-search button:hover{background:var(--tx-cream)}
+.tx-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  padding:10px 20px;border-radius:999px;font-size:14px;font-weight:700;
+  transition:.22s;border:1.5px solid transparent;white-space:nowrap;
+}
+.tx-btn-main{background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;box-shadow:0 8px 20px rgba(234,88,12,.28)}
+.tx-btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(234,88,12,.36)}
+.tx-btn-ghost{border-color:var(--tx-line);color:var(--tx-ink-soft);background:#fff}
+.tx-btn-ghost:hover{border-color:var(--tx-main);color:var(--tx-main-deep);background:var(--tx-cream)}
+.tx-burger{display:none;width:42px;height:42px;border-radius:12px;border:1.5px solid var(--tx-line);background:#fff;color:var(--tx-ink)}
+.tx-search-feedback{
+  position:absolute;top:110%;left:0;right:0;background:#fff;border:1px solid var(--tx-line);
+  border-radius:14px;box-shadow:var(--tx-shadow);padding:8px;font-size:13px;display:none;z-index:70;
+}
+.tx-search-feedback.on{display:block}
+.tx-search-feedback li{padding:6px 10px;border-radius:8px;color:var(--tx-ink-soft);cursor:pointer}
+.tx-search-feedback li:hover{background:var(--tx-cream);color:var(--tx-main-deep)}
+
+@media(max-width:980px){
+  .tx-burger{display:grid;place-items:center}
+  .tx-nav{
+    position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;
+    padding:10px 16px 16px;gap:2px;border-bottom:1px solid var(--tx-line);
+    box-shadow:0 18px 30px rgba(194,65,12,.10);display:none;
+  }
+  .tx-nav.open{display:flex}
+  .tx-header .tx-wrap{flex-wrap:wrap;position:relative}
+  .tx-search input{width:140px}
+  .tx-search input:focus{width:170px}
+}
+@media(max-width:620px){
+  .tx-header-tools .tx-btn-main{display:none}
+  .tx-announce .tx-wrap{font-size:12px}
+  .tx-announce-link{display:none}
+}
+
+/* ---------- 首屏 ---------- */
+.tx-hero{padding:52px 0 30px;position:relative;overflow:hidden}
+.tx-hero::before{
+  content:"";position:absolute;width:520px;height:520px;right:-160px;top:-200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(251,191,36,.35),transparent 68%);pointer-events:none;
+}
+.tx-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative}
+.tx-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;background:var(--tx-cream);color:var(--tx-main-deep);
+  font-size:12.5px;font-weight:800;letter-spacing:1.5px;padding:6px 14px;border-radius:999px;
+  border:1px solid #fcd9b3;margin-bottom:18px;
+}
+.tx-eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--tx-main);display:inline-block}
+.tx-hero h1{
+  font-size:clamp(38px,5.2vw,62px);line-height:1.12;letter-spacing:2px;font-weight:900;
+  background:linear-gradient(120deg,#3b2416 20%,#c2410c 60%,#f97316 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.tx-hero-slogan{font-size:19px;font-weight:700;color:var(--tx-main-deep);margin:14px 0 16px;letter-spacing:.5px}
+.tx-hero-desc{font-size:15px;color:var(--tx-ink-soft);max-width:560px}
+.tx-hero-actions{display:flex;gap:12px;margin:26px 0 30px;flex-wrap:wrap}
+.tx-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:520px}
+.tx-stat{background:#fff;border:1px solid var(--tx-line);border-radius:14px;padding:14px 16px;box-shadow:0 6px 18px rgba(194,65,12,.06)}
+.tx-stat b{display:block;font-size:24px;color:var(--tx-main-deep);line-height:1.2;font-weight:900}
+.tx-stat span{font-size:12.5px;color:var(--tx-ink-soft)}
+
+.tx-hero-visual{position:relative}
+.tx-hero-cover{
+  border-radius:26px;overflow:hidden;box-shadow:0 26px 60px rgba(194,65,12,.24);
+  border:6px solid #fff;position:relative;aspect-ratio:16/11;background:#fde68a;
+}
+.tx-hero-cover img{width:100%;height:100%;object-fit:cover}
+.tx-play-btn{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.22);transition:.25s;
+}
+.tx-play-btn:hover{transform:translate(-50%,-50%) scale(1.08);background:#fff}
+.tx-play-btn svg{width:26px;height:26px;margin-left:4px;fill:var(--tx-main-deep)}
+.tx-hero-float{
+  position:absolute;background:#fff;border-radius:16px;padding:11px 16px;box-shadow:var(--tx-shadow);
+  border:1px solid var(--tx-line);font-size:13px;font-weight:700;color:var(--tx-ink);
+}
+.tx-hero-float small{display:block;font-weight:500;color:var(--tx-ink-soft);font-size:11.5px}
+.tx-hero-float.f1{left:-18px;bottom:26px}
+.tx-hero-float.f2{right:-10px;top:20px}
+
+/* ---------- 通用 section ---------- */
+.tx-section{padding:62px 0}
+.tx-section-head{text-align:center;margin-bottom:38px}
+.tx-section-head h2{font-size:clamp(26px,3.4vw,36px);letter-spacing:1.5px;font-weight:900}
+.tx-section-head h2 em{font-style:normal;color:var(--tx-main)}
+.tx-section-head p{color:var(--tx-ink-soft);font-size:14.5px;margin-top:8px}
+.tx-tagline{
+  display:inline-block;font-size:12.5px;font-weight:800;color:var(--tx-main-deep);
+  background:var(--tx-cream);padding:4px 13px;border-radius:999px;letter-spacing:2px;margin-bottom:12px;
+}
+
+/* ---------- 深度介绍 ---------- */
+.tx-intro{background:linear-gradient(180deg,#fff,#fff6ea)}
+.tx-intro-body{
+  background:#fff;border:1px solid var(--tx-line);border-radius:24px;padding:38px 42px;
+  box-shadow:var(--tx-shadow);position:relative;
+}
+.tx-intro-body::before{
+  content:"";position:absolute;left:0;top:34px;width:6px;height:64px;border-radius:0 6px 6px 0;
+  background:linear-gradient(#f97316,#fbbf24);
+}
+.tx-intro-body h3{font-size:20px;margin:26px 0 10px;color:var(--tx-main-deep);letter-spacing:.6px}
+.tx-intro-body h3:first-child{margin-top:0}
+.tx-intro-body p{font-size:15px;color:#553a28;margin-bottom:12px;text-align:justify}
+.tx-intro-body strong{color:var(--tx-main-deep)}
+@media(max-width:620px){.tx-intro-body{padding:24px 22px}}
+
+/* ---------- 焦点内容 ---------- */
+.tx-focus-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
+.tx-focus-main{
+  border-radius:22px;overflow:hidden;position:relative;background:#2b1608;box-shadow:var(--tx-shadow);
+  min-height:380px;display:flex;flex-direction:column;justify-content:flex-end;
+}
+.tx-focus-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
+.tx-focus-main .tx-mask{
+  position:relative;padding:26px;background:linear-gradient(0deg,rgba(30,14,4,.92),rgba(30,14,4,.25) 70%,transparent);
+  color:#fff;
+}
+.tx-focus-main h3{font-size:22px;line-height:1.35;margin-bottom:8px}
+.tx-focus-main p{font-size:13.5px;color:#fde3c9;margin-bottom:14px}
+.tx-focus-main .tx-meta{font-size:12.5px;color:#fbbf24;display:flex;gap:14px;flex-wrap:wrap}
+.tx-focus-side{display:grid;gap:16px}
+.tx-focus-item{
+  display:grid;grid-template-columns:132px 1fr;gap:14px;background:#fff;border:1px solid var(--tx-line);
+  border-radius:16px;padding:10px;transition:.25s;align-items:center;
+}
+.tx-focus-item:hover{transform:translateY(-3px);box-shadow:var(--tx-shadow);border-color:#fcd9b3}
+.tx-focus-thumb{border-radius:11px;overflow:hidden;aspect-ratio:16/10}
+.tx-focus-thumb img{width:100%;height:100%;object-fit:cover}
+.tx-focus-item h4{font-size:14.5px;line-height:1.45;margin-bottom:5px}
+.tx-focus-item span{font-size:12px;color:var(--tx-ink-soft)}
+
+/* ---------- 视频流 ---------- */
+.tx-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tx-vcard{
+  background:#fff;border:1px solid var(--tx-line);border-radius:20px;overflow:hidden;
+  display:flex;flex-direction:column;transition:.28s;
+}
+.tx-vcard:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(194,65,12,.16);border-color:#fcd9b3}
+.tx-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#ffe9cf}
+.tx-cover img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.tx-vcard:hover .tx-cover img{transform:scale(1.06)}
+.tx-cover::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 55%,rgba(45,18,2,.55));
+}
+.tx-cover-tag{
+  position:absolute;left:10px;top:10px;z-index:2;font-size:11.5px;font-weight:800;
+  padding:3px 10px;border-radius:999px;background:rgba(255,247,237,.94);color:var(--tx-main-deep);
+}
+.tx-cover-tri{
+  position:absolute;right:10px;top:10px;z-index:2;width:30px;height:30px;border-radius:50%;
+  background:rgba(255,255,255,.9);display:grid;place-items:center;
+}
+.tx-cover-tri svg{width:12px;height:12px;fill:var(--tx-main-deep);margin-left:2px}
+.tx-cover-dur{
+  position:absolute;right:10px;bottom:10px;z-index:2;font-size:11px;color:#fff;
+  background:rgba(30,14,4,.72);padding:2px 8px;border-radius:6px;
+}
+.tx-vbody{padding:15px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tx-vbody h3{font-size:15.5px;line-height:1.45}
+.tx-vbody h3 a:hover{color:var(--tx-main-deep)}
+.tx-vbody p{font-size:13px;color:var(--tx-ink-soft);line-height:1.65}
+.tx-vtags{display:flex;gap:6px;flex-wrap:wrap}
+.tx-vtags span{font-size:11.5px;color:var(--tx-main-deep);background:var(--tx-cream);padding:2px 8px;border-radius:6px}
+.tx-vfoot{
+  display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:10px;
+  border-top:1px dashed var(--tx-line);font-size:12.5px;color:var(--tx-ink-soft);
+}
+.tx-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;font-weight:800;color:#fff;flex:none;letter-spacing:0;
+}
+.tx-avatar.lg{width:56px;height:56px;font-size:20px}
+.tx-avatar.md{width:38px;height:38px;font-size:15px}
+.tx-vd-actor{font-size:12.5px;color:var(--tx-ink);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tx-vd-stats{margin-left:auto;display:flex;align-items:center;gap:4px;flex:none}
+.tx-icon-btn{
+  display:inline-flex;align-items:center;gap:3px;font-size:12px;color:var(--tx-ink-soft);
+  padding:3px 7px;border-radius:8px;transition:.2s;
+}
+.tx-icon-btn:hover{background:var(--tx-cream);color:var(--tx-main-deep)}
+.tx-icon-btn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8}
+.tx-icon-btn.on{color:#e11d48}
+.tx-icon-btn.on svg{fill:currentColor;stroke:currentColor}
+@media(max-width:900px){.tx-video-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.tx-video-grid{grid-template-columns:1fr}.tx-focus-grid{grid-template-columns:1fr}}
+
+/* ---------- 专题 ---------- */
+.tx-special{background:linear-gradient(180deg,#fff8ef,#fff)}
+.tx-special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tx-special-card{
+  border-radius:20px;overflow:hidden;position:relative;min-height:250px;color:#fff;
+  display:flex;flex-direction:column;justify-content:flex-end;padding:22px;transition:.28s;
+  box-shadow:0 12px 26px rgba(194,65,12,.14);
+}
+.tx-special-card:hover{transform:translateY(-6px)}
+.tx-special-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.tx-special-card::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(0deg,rgba(28,12,2,.9),rgba(28,12,2,.15) 68%,transparent);
+}
+.tx-special-card>*{position:relative;z-index:2}
+.tx-special-state{
+  align-self:flex-start;font-size:11.5px;padding:2px 10px;border-radius:999px;
+  background:rgba(251,191,36,.92);color:#4a2103;font-weight:800;margin-bottom:10px;
+}
+.tx-special-card h3{font-size:18px;line-height:1.4;margin-bottom:6px}
+.tx-special-card p{font-size:12.5px;color:#fde3c9;line-height:1.6}
+@media(max-width:900px){.tx-special-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.tx-special-grid{grid-template-columns:1fr}}
+
+/* ---------- 创作者 ---------- */
+.tx-creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tx-creator{
+  background:#fff;border:1px solid var(--tx-line);border-radius:20px;padding:22px;
+  display:flex;flex-direction:column;gap:12px;transition:.26s;cursor:pointer;
+}
+.tx-creator:hover{transform:translateY(-5px);box-shadow:var(--tx-shadow);border-color:#fcd9b3}
+.tx-creator-top{display:flex;align-items:center;gap:13px}
+.tx-creator-top h3{font-size:16.5px;margin-bottom:2px}
+.tx-creator-top span{font-size:12px;color:var(--tx-main-deep);font-weight:700}
+.tx-creator p{font-size:13px;color:var(--tx-ink-soft);flex:1}
+.tx-creator-foot{
+  display:flex;justify-content:space-between;font-size:12.5px;color:var(--tx-ink-soft);
+  padding-top:11px;border-top:1px dashed var(--tx-line);
+}
+.tx-creator-foot b{color:var(--tx-main-deep);font-size:15px}
+@media(max-width:900px){.tx-creator-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.tx-creator-grid{grid-template-columns:1fr}}
+
+/* ---------- 故事随笔 ---------- */
+.tx-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tx-story{
+  background:#fff;border-radius:20px;padding:24px;border:1px solid var(--tx-line);
+  position:relative;overflow:hidden;
+}
+.tx-story::before{
+  content:"“";position:absolute;right:16px;top:-8px;font-size:74px;color:#fbe3cd;font-weight:900;
+  line-height:1;font-family:Georgia,serif;
+}
+.tx-story h3{font-size:16.5px;margin-bottom:10px;color:var(--tx-main-deep)}
+.tx-story p{font-size:13.5px;color:#5c4130;line-height:1.85}
+.tx-story footer{margin-top:14px;font-size:12px;color:var(--tx-ink-soft)}
+@media(max-width:900px){.tx-story-grid{grid-template-columns:1fr}}
+
+/* ---------- 作品墙 ---------- */
+.tx-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:130px;gap:14px}
+.tx-wall figure{
+  position:relative;border-radius:16px;overflow:hidden;background:#ffe9cf;
+  transition:.26s;
+}
+.tx-wall figure:hover{transform:scale(1.03);z-index:2;box-shadow:0 18px 34px rgba(194,65,12,.22)}
+.tx-wall img{width:100%;height:100%;object-fit:cover}
+.tx-wall figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:16px 12px 9px;font-size:12px;color:#fff;
+  background:linear-gradient(0deg,rgba(28,12,2,.85),transparent);
+}
+.tx-wall .w-big{grid-column:span 2;grid-row:span 2}
+.tx-wall .w-tall{grid-row:span 2}
+@media(max-width:900px){.tx-wall{grid-template-columns:repeat(3,1fr);grid-auto-rows:110px}}
+@media(max-width:600px){.tx-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:100px}}
+
+/* ---------- 评价 ---------- */
+.tx-review{background:linear-gradient(180deg,#fff,#fff6ea)}
+.tx-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tx-review-item{
+  background:#fff;border-radius:18px;padding:20px;border:1px solid var(--tx-line);
+  display:flex;flex-direction:column;gap:10px;
+}
+.tx-review-item .tx-stars{color:#f59e0b;font-size:13px;letter-spacing:2px}
+.tx-review-item p{font-size:13.5px;color:#553a28;line-height:1.8;flex:1}
+.tx-review-user{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--tx-ink-soft)}
+.tx-review-user b{color:var(--tx-ink)}
+@media(max-width:900px){.tx-review-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.tx-review-grid{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+.tx-faq{max-width:840px;margin:0 auto;display:grid;gap:12px}
+.tx-faq details{
+  background:#fff;border:1px solid var(--tx-line);border-radius:14px;padding:0 20px;transition:.22s;
+}
+.tx-faq details[open]{border-color:#fcd9b3;box-shadow:0 10px 26px rgba(194,65,12,.10)}
+.tx-faq summary{
+  cursor:pointer;padding:16px 0;font-weight:700;font-size:15px;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.tx-faq summary::-webkit-details-marker{display:none}
+.tx-faq summary::after{
+  content:"+";font-size:20px;color:var(--tx-main);font-weight:900;transition:.2s;flex:none;
+}
+.tx-faq details[open] summary::after{transform:rotate(45deg)}
+.tx-faq details p{padding:0 0 18px;font-size:13.5px;color:var(--tx-ink-soft);line-height:1.85}
+
+/* ---------- 联系/投稿 ---------- */
+.tx-contact{background:linear-gradient(135deg,#3b2416,#7c2d12 60%,#c2410c);color:#fff7ed;padding:60px 0}
+.tx-contact .tx-wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:center}
+.tx-contact h2{font-size:clamp(25px,3.2vw,34px);margin-bottom:12px;letter-spacing:1px}
+.tx-contact p{font-size:14.5px;color:#fecaca;max-width:520px;margin-bottom:20px}
+.tx-contact-actions{display:flex;gap:12px;flex-wrap:wrap}
+.tx-btn-light{background:#fff7ed;color:#c2410c}
+.tx-btn-light:hover{background:#ffedd5;transform:translateY(-2px)}
+.tx-btn-line{border-color:rgba(255,237,213,.5);color:#ffe9c9}
+.tx-btn-line:hover{background:rgba(255,255,255,.12)}
+.tx-contact-info{display:grid;gap:14px}
+.tx-contact-item{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,237,213,.22);
+  border-radius:14px;padding:14px 18px;font-size:13.5px;
+}
+.tx-contact-item b{display:block;font-size:12px;color:#fdba74;letter-spacing:1.5px;margin-bottom:3px}
+@media(max-width:860px){.tx-contact .tx-wrap{grid-template-columns:1fr}}
+
+/* ---------- 页脚 ---------- */
+.tx-footer{background:#2b1608;color:#d6bda9;padding:48px 0 26px;font-size:13.5px}
+.tx-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:32px;margin-bottom:32px}
+.tx-footer h4{color:#fff7ed;font-size:14.5px;margin-bottom:13px;letter-spacing:1px}
+.tx-footer li{margin-bottom:8px}
+.tx-footer a:hover{color:#fdba74}
+.tx-footer-brand p{line-height:1.85;margin-bottom:12px}
+.tx-footer-tags{display:flex;gap:7px;flex-wrap:wrap}
+.tx-footer-tags span{font-size:11.5px;border:1px solid #5c3a22;padding:2px 9px;border-radius:999px;color:#c9a68b}
+.tx-footer-bottom{
+  border-top:1px solid #4a2c17;padding-top:18px;display:flex;justify-content:space-between;
+  gap:14px;flex-wrap:wrap;font-size:12.5px;color:#a98671;
+}
+@media(max-width:860px){.tx-footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.tx-footer-grid{grid-template-columns:1fr}}
+
+/* ---------- 回到顶部 / Toast ---------- */
+.tx-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;display:grid;place-items:center;
+  box-shadow:0 12px 26px rgba(234,88,12,.38);opacity:0;pointer-events:none;transition:.28s;z-index:80;
+}
+.tx-top.show{opacity:1;pointer-events:auto}
+.tx-top:hover{transform:translateY(-3px)}
+.tx-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:120;
+  background:#3b2416;color:#fff7ed;font-size:13.5px;padding:11px 22px;border-radius:999px;
+  box-shadow:0 14px 30px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:.28s;
+}
+.tx-toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- 弹窗 ---------- */
+.tx-modal{
+  position:fixed;inset:0;z-index:120;display:none;place-items:center;padding:20px;
+  background:rgba(43,22,8,.55);backdrop-filter:blur(3px);
+}
+.tx-modal.open{display:grid}
+.tx-modal-box{
+  background:#fff;border-radius:22px;width:min(560px,94vw);max-height:86vh;overflow:auto;
+  padding:30px 30px 26px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.3);
+}
+.tx-modal-close{
+  position:absolute;right:14px;top:14px;width:34px;height:34px;border-radius:50%;
+  background:var(--tx-cream);color:var(--tx-main-deep);font-size:18px;font-weight:800;display:grid;place-items:center;
+}
+.tx-modal-box h3{font-size:20px;margin-bottom:8px;color:var(--tx-main-deep)}
+.tx-modal-box .tx-modal-sub{font-size:13px;color:var(--tx-ink-soft);margin-bottom:18px}
+.tx-modal-box label{display:block;font-size:13px;font-weight:700;margin:14px 0 6px}
+.tx-modal-box input,.tx-modal-box textarea{
+  width:100%;border:1.5px solid var(--tx-line);border-radius:11px;padding:10px 13px;
+  font-size:14px;font-family:inherit;color:var(--tx-ink);background:#fffdf9;outline:none;
+}
+.tx-modal-box input:focus,.tx-modal-box textarea:focus{border-color:var(--tx-main);box-shadow:0 0 0 4px rgba(249,115,22,.12)}
+.tx-modal-box textarea{min-height:96px;resize:vertical}
+.tx-modal-actions{display:flex;gap:10px;margin-top:20px;justify-content:flex-end}
+.tx-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.tx-share-row button{
+  padding:9px 18px;border-radius:999px;border:1.5px solid var(--tx-line);
+  font-size:13.5px;font-weight:700;color:var(--tx-ink-soft);transition:.2s;
+}
+.tx-share-row button:hover{border-color:var(--tx-main);color:var(--tx-main-deep);background:var(--tx-cream)}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="tx-sticky">
+  <div class="tx-announce">
+    <div class="tx-wrap">
+      <span class="tx-announce-tag">官方发布</span>
+      <span class="tx-announce-text">冬日软痒企划 <b>《挠脚心·暖冬特辑》</b> 已上线 12 支原创短片 · 「脚心安放计划」第二期报名开启 · 本周新增创作者 36 位</span>
+      <a class="tx-announce-link" href="#tx-itinerary">查看专题 →</a>
+    </div>
+  </div>
+  <header class="tx-header">
+    <div class="tx-wrap">
+      <a class="tx-logo" href="#tx-home" aria-label="挠脚心官方网站首页">
+        <span class="tx-logo-mark" aria-hidden="true">痒</span>
+        <span class="tx-logo-txt"><strong>挠脚心</strong><span>NAOJIAOXIN STUDIO</span></span>
+      </a>
+      <nav class="tx-nav" id="txNav" aria-label="主导航">
+        <a href="#tx-home">首页</a>
+        <a href="#tx-focus">焦点影像</a>
+        <a href="#tx-feed">视频社区</a>
+        <a href="#tx-itinerary">专题企划</a>
+        <a href="#tx-creators">创作者</a>
+        <a href="#tx-faq">帮助中心</a>
+        <a href="#tx-contact">联系投稿</a>
+      </nav>
+      <div class="tx-header-tools">
+        <div class="tx-search">
+          <input type="text" id="txSearchInput" placeholder="搜软痒、治愈、手作…" aria-label="站内搜索">
+          <button type="button" id="txSearchBtn" aria-label="搜索">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          </button>
+          <ul class="tx-search-feedback" id="txSearchFeedback"></ul>
+        </div>
+        <button class="tx-btn tx-btn-main" type="button" data-modal="submit">投递作品</button>
+        <button class="tx-burger" id="txBurger" aria-label="展开导航" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- 首屏 -->
+  <section class="tx-hero" id="tx-home">
+    <div class="tx-wrap tx-hero-grid">
+      <div>
+        <span class="tx-eyebrow"><i></i>挠脚心 · 官方影像社区</span>
+        <h1>挠脚心</h1>
+        <p class="tx-hero-slogan">一寸软痒，一段好心情</p>
+        <p class="tx-hero-desc">挠脚心是企业级视频品牌官方网站，专注软痒趣味、治愈系日常与轻喜剧影像的原创内容生态。我们相信笑声会传染，放松也需要练习。</p>
+        <div class="tx-hero-actions">
+          <a class="tx-btn tx-btn-main" href="#tx-feed">进入视频社区</a>
+          <a class="tx-btn tx-btn-ghost" href="#tx-intro">了解品牌理念</a>
+        </div>
+        <div class="tx-stats">
+          <div class="tx-stat"><b data-count="1286">0</b><span>原创短片 / 累计</span></div>
+          <div class="tx-stat"><b data-count="3.42">0</b><span>稳定更新年数</span></div>
+          <div class="tx-stat"><b data-count="268">0</b><span>签约创作者（位）</span></div>
+        </div>
+      </div>
+      <div class="tx-hero-visual">
+        <div class="tx-hero-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fdba74'/%3E%3Cstop offset='1' stop-color='%23f97316'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23a)'/%3E%3Ccircle cx='640' cy='110' r='90' fill='%23fff7ed' opacity='.35'/%3E%3Ccircle cx='140' cy='440' r='130' fill='%23fed7aa' opacity='.4'/%3E%3Cpath d='M180 360c0-90 70-160 160-160s160 70 160 160c0 40-60 70-160 70s-160-30-160-70z' fill='%23fff7ed'/%3E%3Cpath d='M250 350q30 20 60 0' stroke='%23f97316' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Cpath d='M370 350q30 20 60 0' stroke='%23f97316' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='290' cy='300' r='13' fill='%23f97316'/%3E%3Ccircle cx='410' cy='300' r='13' fill='%23f97316'/%3E%3Cpath d='M330 390q30 22 60 0' stroke='%23ea580c' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Ctext x='400' y='500' text-anchor='middle' font-size='30' font-family='sans-serif' font-weight='bold' fill='%23fff7ed'%3E挠脚心 · 软痒频道%3C/text%3E%3C/svg%3E" alt="挠脚心品牌主视觉：暖橙色笑脸软痒吉祥物与频道标识" width="800" height="550">
+          <button class="tx-play-btn" type="button" data-modal="share" aria-label="播放品牌形象片">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+        <div class="tx-hero-float f1"><small>本周热门标签</small># 脚心安放计划</div>
+        <div class="tx-hero-float f2"><small>正在直播</small>软痒夜谈 · 第 46 期</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度介绍 -->
+  <section class="tx-section tx-intro" id="tx-intro">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">品牌深度解析</span>
+        <h2>关于<em>挠脚心</em>，我们想认真说清楚</h2>
+        <p>一个把“软痒”做成正经事业的内容品牌，一篇讲透定位、理念与内容方法的长文</p>
+      </div>
+      <div class="tx-intro-body">
+        <h3>一、关键词定位：为什么是“挠脚心”</h3>
+        <p>“挠脚心”天然带着两层含义。第一层是身体感受：轻、软、痒，一种让人忍不住笑着躲开又忍不住靠近的触觉。第二层是心理感受：它对应着现代人最稀缺的能力——放心地放松下来。作为持续运营的视频品牌，<strong>挠脚心官方网站</strong>把这两种感受合成为一个清晰的内容坐标：我们制作让人放下戒备、露出笑意的影像，也记录那些“被轻轻挠了一下心口”的真实瞬间。</p>
+        <p>很多人第一次听到这个名字会愣一下，然后笑出来。这种“先笑再问”的反应，正是我们希望内容拥有的第一落点。挠脚心不是一个只讲笑话的频道，而是一个以软痒趣味为入口、以治愈与陪伴为落点的内容生态。在这里，轻喜剧短片、手作记录、宠物日常、深夜访谈、城市角落的声音采集，都能找到各自的观众。</p>
+        <h3>二、内容方法：软痒不等于轻浮</h3>
+        <p>我们坚持“软痒有分寸”。所有涉及身体接触与趣味互动的影像，都在充分沟通、明确同意、尊重边界的前提下拍摄，并在成片前完成一次内容复核。品牌的<strong>专业</strong>不体现在口气严肃，而体现在流程严谨：脚本草案、场景沟通、拍摄记录、成片校对，四道环节缺一不可。我们希望观众看到的是轻松，创作者感受到的是被保护。</p>
+        <p>内容形式上，挠脚心形成了三条稳定主线。第一条是「软痒现场」，以轻喜剧与趣味互动为主的原创短片，节奏快、笑点密、结尾留有温度；第二条是「脚心安放」，以慢节奏记录为主，手作、收纳、烘焙、旧物修复、声音采集都在其中，强调过程的完整与画面的干净；第三条是「深聊四十分钟」，邀请创作者、手艺人、心理工作者、普通用户对谈，讨论放松、边界、亲密关系与日常秩序。<strong>多元</strong>的题材让社区保持活力，也避免单一趣味被过度消耗。</p>
+        <h3>三、创作者生态：让认真的人被看见</h3>
+        <p>挠脚心的<strong>创作者</strong>不是流量零件。我们为签约作者提供选题共研、拍摄场地、设备支持、版权登记与分发建议，并保留创作者对自身作品的署名权与内容主导权。到目前为止，平台已与 268 位创作者建立稳定合作，其中超过一半是从社区投稿中被发现的素人。我们相信<strong>匠心</strong>需要时间，所以不设“必须周更”的硬指标，而是用季度企划的方式，让创作者有充分准备的空间。</p>
+        <p>对新人，我们提供「第一次投稿」陪跑计划：从 30 秒竖屏练习开始，到 3 分钟横屏叙事，再到 10 分钟以上的专题短片，每一步都有编辑给出具体的修改意见。我们不做空泛的鼓励，只做有用的反馈。许多创作者说，第一次收到标注到秒的修改建议时，才真正理解什么叫<strong>专业</strong>。</p>
+        <h3>四、社区气质：温暖是设计出来的</h3>
+        <p>温暖不是口号，而是规则。挠脚心的评论区默认开启“友善提醒”，对人身攻击、恶意模仿、未经同意的身体描述进行拦截与提示；我们鼓励具体、有信息量的评论，而不是空洞的“哈哈”。在「脚心安放计划」里，用户可以上传自己的 60 秒放松片段——一段揉面、一次浇花、一只猫伸懒腰——不需要精致，只需要真实。<strong>真实</strong>是我们最看重的品质，也是社区口碑的根基。</p>
+        <p>我们同样重视<strong>社会责任</strong>。挠脚心与本地社区中心合作，定期举办线下观影与影像工作坊，为青少年提供基础的拍摄与剪辑课程；在内容层面，我们避免任何可能引发不适的过度身体呈现，也拒绝以“猎奇”作为传播手段。一个品牌能走多远，取决于它愿意在看不见的地方花多少功夫。</p>
+        <h3>五、技术、正版与长期主义</h3>
+        <p>平台所有影像均提供<strong>高清</strong>播放与多码率自适应，移动端与桌面端保持一致的观看体验。我们建立了正版素材库，音乐、字体、音效均取得授权，创作者可以放心使用。对二次创作，我们提供明确的授权说明与<strong>下载</strong>规范，减少版权纠纷。挠脚心相信，<strong>持续运营</strong>比短期爆发更重要：稳定的更新节奏、透明的规则、可预期的收益分配，才是一个视频品牌能够长期被<strong>值得信赖</strong>的原因。</p>
+        <p>未来一年，挠脚心将围绕「软痒」「安放」「深聊」三个关键词继续深耕，推出城市声音地图、手作人档案、深夜电台影像化等企划，并开放更多<strong>合作</strong>入口。如果你也在做让人放松的内容，欢迎把作品投递过来。我们不追求把每个人变成创作者，但我们希望每个人都能在这里，找到一处可以安心笑出来的角落。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点影像 -->
+  <section class="tx-section" id="tx-focus">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">焦点影像</span>
+        <h2>本周<em>编辑推荐</em></h2>
+        <p>由编辑部与社区共同选出的重点内容，每一支都值得完整看完</p>
+      </div>
+      <div class="tx-focus-grid">
+        <article class="tx-focus-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='b' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b1608'/%3E%3Cstop offset='1' stop-color='%23c2410c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23b)'/%3E%3Ccircle cx='640' cy='120' r='70' fill='%23fbbf24' opacity='.75'/%3E%3Crect x='90' y='210' width='280' height='170' rx='18' fill='%23fff7ed' opacity='.92'/%3E%3Cpath d='M120 300q40-26 80 0t80 0' stroke='%23f97316' stroke-width='9' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='170' cy='268' r='10' fill='%23f97316'/%3E%3Ccircle cx='250' cy='268' r='10' fill='%23f97316'/%3E%3Cpath d='M420 200h250v180H420z' fill='%23fed7aa' opacity='.35'/%3E%3Ctext x='545' y='300' text-anchor='middle' font-size='26' font-family='sans-serif' font-weight='bold' fill='%23fff7ed'%3E软痒现场%3C/text%3E%3C/svg%3E" alt="《软痒现场：一场没有台词的办公室轻喜剧》焦点封面">
+          <div class="tx-mask">
+            <h3>软痒现场：一场没有台词的办公室轻喜剧</h3>
+            <p>用肢体与表情讲完一个故事。拍摄现场没有一句台词，却让整个剪辑室笑到停不下来。</p>
+            <div class="tx-meta"><span>软痒现场 · 第 38 期</span><span>时长 08:42</span><span>正片已发布</span></div>
+          </div>
+        </article>
+        <div class="tx-focus-side">
+          <article class="tx-focus-item">
+            <div class="tx-focus-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23fde68a'/%3E%3Ccircle cx='160' cy='100' r='58' fill='%23fff7ed'/%3E%3Cpath d='M130 92q14 10 28 0' stroke='%23ea580c' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M162 92q14 10 28 0' stroke='%23ea580c' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M142 122q18 14 36 0' stroke='%23f97316' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="《脚心安放：把一整个下午交给一团面》缩略封面"></div>
+            <div><h4>脚心安放：把一整个下午交给一团面</h4><span>手作记录 · 12:30</span></div>
+          </article>
+          <article class="tx-focus-item">
+            <div class="tx-focus-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%236b4f3a'/%3E%3Ccircle cx='100' cy='80' r='34' fill='%23fed7aa'/%3E%3Ccircle cx='215' cy='118' r='46' fill='%23fdba74'/%3E%3Cpath d='M60 170h200' stroke='%23fbbf24' stroke-width='6'/%3E%3C/svg%3E" alt="《深夜访谈：边界感是亲密关系里的礼貌》缩略封面"></div>
+            <div><h4>深夜访谈：边界感是亲密关系里的礼貌</h4><span>深聊四十分钟 · 41:06</span></div>
+          </article>
+          <article class="tx-focus-item">
+            <div class="tx-focus-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23a7f3d0'/%3E%3Cpath d='M40 150q60-60 120 0t120 0' stroke='%23065f46' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='250' cy='62' r='26' fill='%23fef3c7'/%3E%3C/svg%3E" alt="《城市声音地图：菜市场里的三条呼吸声》缩略封面"></div>
+            <div><h4>城市声音地图：菜市场里的三条呼吸声</h4><span>城市探索 · 09:18</span></div>
+          </article>
+          <article class="tx-focus-item">
+            <div class="tx-focus-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23312e81'/%3E%3Ccircle cx='160' cy='100' r='52' fill='%23e0e7ff'/%3E%3Cpath d='M140 92l40 0' stroke='%23312e81' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='150' cy='120' r='8' fill='%23f97316'/%3E%3Ccircle cx='180' cy='120' r='8' fill='%23f97316'/%3E%3C/svg%3E" alt="《猫的软痒时间：一只橘猫的午后自述》缩略封面"></div>
+            <div><h4>猫的软痒时间：一只橘猫的午后自述</h4><span>萌宠日常 · 06:55</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频社区 -->
+  <section class="tx-section" id="tx-feed" style="background:linear-gradient(180deg,#fff8ef,#fff)">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">视频社区</span>
+        <h2>正在被<em>反复观看</em>的原创内容</h2>
+        <p>来自挠脚心创作者的真实作品，支持点赞与收藏，让喜欢的内容留下来</p>
+      </div>
+      <div class="tx-video-grid" id="txVideoGrid">
+
+        <article class="tx-vcard">
+          <div class="tx-cover">
+            <span class="tx-cover-tag">软痒现场</span>
+            <span class="tx-cover-tri"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23fdba74'/%3E%3Ccircle cx='120' cy='90' r='46' fill='%23fff7ed'/%3E%3Cpattern id='s1' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23f97316' opacity='.5'/%3E%3C/pattern%3E%3Crect x='240' y='40' width='200' height='190' rx='16' fill='url(%23s1)'/%3E%3C/svg%3E" alt="《被挠到笑场的三十秒》视频封面">
+            <span class="tx-cover-dur">03:24</span>
+          </div>
+          <div class="tx-vbody">
+            <h3><a href="#tx-feed">被挠到笑场的三十秒：一次完全没有剧本的拍摄</a></h3>
+            <p>原计划拍五条，结果第一条就笑到停不下来。幕后花絮比正片更珍贵。</p>
+            <div class="tx-vtags"><span>即兴</span><span>幕后</span><span>轻喜剧</span></div>
+            <div class="tx-vfoot">
+              <span class="tx-avatar" style="background:#f97316">软</span>
+              <span class="tx-vd-actor">软痒编辑部</span>
+              <span class="tx-vd-stats">
+                <button class="tx-icon-btn" type="button" data-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M7 22V10l5-8 1.5 1.5L12 9h7a2 2 0 012 2.3l-1.4 8A2 2 0 0117.6 21H7z"/></svg><b>842</b></button>
+                <button class="tx-icon-btn" type="button" data-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 011 1v17l-7-4.5L5 21V4a1 1 0 011-1z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-vcard">
+          <div class="tx-cover">
+            <span class="tx-cover-tag">手作记录</span>
+            <span class="tx-cover-tri"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23fef3c7'/%3E%3Ccircle cx='240' cy='140' r='80' fill='%23fbbf24' opacity='.6'/%3E%3Cpath d='M120 210q120-90 240 0' stroke='%23a16207' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='170' cy='96' r='22' fill='%23fff7ed'/%3E%3C/svg%3E" alt="《手作：把旧毛衣拆成一条围巾》视频封面">
+            <span class="tx-cover-dur">14:08</span>
+          </div>
+          <div class="tx-vbody">
+            <h3><a href="#tx-feed">手作：把一件旧毛衣拆成一条温暖的围巾</a></h3>
+            <p>拆线、绕团、重新起针。旧物修复的过程，本身就是一次缓慢的整理。</p>
+            <div class="tx-vtags"><span>旧物修复</span><span>手作DIY</span></div>
+            <div class="tx-vfoot">
+              <span class="tx-avatar" style="background:#0f766e">线</span>
+              <span class="tx-vd-actor">线团不眠</span>
+              <span class="tx-vd-stats">
+                <button class="tx-icon-btn" type="button" data-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M7 22V10l5-8 1.5 1.5L12 9h7a2 2 0 012 2.3l-1.4 8A2 2 0 0117.6 21H7z"/></svg><b>1.2k</b></button>
+                <button class="tx-icon-btn" type="button" data-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 011 1v17l-7-4.5L5 21V4a1 1 0 011-1z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-vcard">
+          <div class="tx-cover">
+            <span class="tx-cover-tag">萌宠日常</span>
+            <span class="tx-cover-tri"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23e0f2fe'/%3E%3Ccircle cx='240' cy='150' r='78' fill='%23fdba74'/%3E%3Cpath d='M196 108l-22-34 40 10zM284 108l22-34-40 10z' fill='%23f97316'/%3E%3Ccircle cx='216' cy='142' r='9' fill='%23431407'/%3E%3Ccircle cx='264' cy='142' r='9' fill='%23431407'/%3E%3Cpath d='M232 164q8 8 16 0' stroke='%23431407' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="《橘猫的一天：从窗台到纸箱的十次迁徙》视频封面">
+            <span class="tx-cover-dur">07:12</span>
+          </div>
+          <div class="tx-vbody">
+            <h3><a href="#tx-feed">橘猫的一天：从窗台到纸箱的十次迁徙</a></h3>
+            <p>全程无旁白，只有猫的脚步声和阳光移动的声音。适合放空时观看。</p>
+            <div class="tx-vtags"><span>猫</span><span>治愈影像</span></div>
+            <div class="tx-vfoot">
+              <span class="tx-avatar" style="background:#d97706">橘</span>
+              <span class="tx-vd-actor">橘座观察室</span>
+              <span class="tx-vd-stats">
+                <button class="tx-icon-btn" type="button" data-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M7 22V10l5-8 1.5 1.5L12 9h7a2 2 0 012 2.3l-1.4 8A2 2 0 0117.6 21H7z"/></svg><b>2.4k</b></button>
+                <button class="tx-icon-btn" type="button" data-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 011 1v17l-7-4.5L5 21V4a1 1 0 011-1z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-vcard">
+          <div class="tx-cover">
+            <span class="tx-cover-tag">深聊</span>
+            <span class="tx-cover-tri"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231f2937'/%3E%3Ccircle cx='150' cy='110' r='54' fill='%23fbbf24' opacity='.9'/%3E%3Ccircle cx='330' cy='160' r='66' fill='%23fb7185' opacity='.7'/%3E%3Crect x='180' y='196' width='120' height='8' rx='4' fill='%23e5e7eb' opacity='.6'/%3E%3C/svg%3E" alt="《深聊：把放松当成一门功课来练》视频封面">
+            <span class="tx-cover-dur">38:20</span>
+          </div>
+          <div class="tx-vbody">
+            <h3><a href="#tx-feed">深聊：把放松当成一门功课来练</a></h3>
+            <p>和心理咨询师聊了四十分钟，关于紧绷、羞耻感，以及如何允许自己什么都不做。</p>
+            <div class="tx-vtags"><span>人物访谈</span><span>心理</span><span>长视频</span></div>
+            <div class="tx-vfoot">
+              <span class="tx-avatar" style="background:#4f46e5">深</span>
+              <span class="tx-vd-actor">深聊四十分钟</span>
+              <span class="tx-vd-stats">
+                <button class="tx-icon-btn" type="button" data-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M7 22V10l5-8 1.5 1.5L12 9h7a2 2 0 012 2.3l-1.4 8A2 2 0 0117.6 21H7z"/></svg><b>960</b></button>
+                <button class="tx-icon-btn" type="button" data-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 011 1v17l-7-4.5L5 21V4a1 1 0 011-1z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-vcard">
+          <div class="tx-cover">
+            <span class="tx-cover-tag">城市探索</span>
+            <span class="tx-cover-tri"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%230e7490'/%3E%3Crect x='60' y='130' width='70' height='120' fill='%23a5f3fc' opacity='.7'/%3E%3Crect x='150' y='90' width='80' height='160' fill='%23ecfeff' opacity='.5'/%3E%3Crect x='250' y='150' width='60' height='100' fill='%23cffafe' opacity='.6'/%3E%3Crect x='330' y='70' width='90' height='180' fill='%23fbbf24' opacity='.55'/%3E%3Ccircle cx='390' cy='46' r='26' fill='%23fde68a'/%3E%3C/svg%3E" alt="《城市探索：清晨五点的江边步道》视频封面">
+            <span class="tx-cover-dur">11:36</span>
+          </div>
+          <div class="tx-vbody">
+            <h3><a href="#tx-feed">城市探索：清晨五点的江边步道，只有风和扫地声</a></h3>
+            <p>我们带着录音笔走完了整条步道，记录一座城市醒来前的呼吸。</p>
+            <div class="tx-vtags"><span>城市探索</span><span>声音采集</span></div>
+            <div class="tx-vfoot">
+              <span class="tx-avatar" style="background:#0891b2">城</span>
+              <span class="tx-vd-actor">江城记录组</span>
+              <span class="tx-vd-stats">
+                <button class="tx-icon-btn" type="button" data-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M7 22V10l5-8 1.5 1.5L12 9h7a2 2 0 012 2.3l-1.4 8A2 2 0 0117.6 21H7z"/></svg><b>738</b></button>
+                <button class="tx-icon-btn" type="button" data-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 011 1v17l-7-4.5L5 21V4a1 1 0 011-1z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-vcard">
+          <div class="tx-cover">
+            <span class="tx-cover-tag">教程干货</span>
+            <span class="tx-cover-tri"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f5f3ff'/%3E%3Crect x='70' y='60' width='340' height='150' rx='14' fill='%23ede9fe'/%3E%3Crect x='100' y='92' width='140' height='12' rx='6' fill='%238b5cf6'/%3E%3Crect x='100' y='120' width='220' height='12' rx='6' fill='%23c4b5fd'/%3E%3Crect x='100' y='148' width='180' height='12' rx='6' fill='%23c4b5fd'/%3E%3Ccircle cx='360' cy='160' r='34' fill='%23f97316'/%3E%3Cpath d='M348 160l10 10 18-20' stroke='%23fff' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" alt="《新手剪辑：把一段素材剪出呼吸感》视频封面">
+            <span class="tx-cover-dur">16:50</span>
+          </div>
+          <div class="tx-vbody">
+            <h3><a href="#tx-feed">新手剪辑：三步把一段素材剪出呼吸感</a></h3>
+            <p>节奏不是越快越好。留白、环境音、镜头长短，这三个变量决定了片子的情绪。</p>
+            <div class="tx-vtags"><span>实用技巧</span><span>剪辑</span></div>
+            <div class="tx-vfoot">
+              <span class="tx-avatar" style="background:#7c3aed">剪</span>
+              <span class="tx-vd-actor">剪辑台老周</span>
+              <span class="tx-vd-stats">
+                <button class="tx-icon-btn" type="button" data-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M7 22V10l5-8 1.5 1.5L12 9h7a2 2 0 012 2.3l-1.4 8A2 2 0 0117.6 21H7z"/></svg><b>1.8k</b></button>
+                <button class="tx-icon-btn" type="button" data-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 011 1v17l-7-4.5L5 21V4a1 1 0 011-1z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="tx-section tx-special" id="tx-itinerary">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">专题企划</span>
+        <h2>正在进行中的<em>软痒企划</em></h2>
+        <p>每一个企划都有明确的主题、更新节奏与参与方式，欢迎围观也欢迎加入</p>
+      </div>
+      <div class="tx-special-grid">
+        <article class="tx-special-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23c2410c'/%3E%3Ccircle cx='300' cy='80' r='58' fill='%23fbbf24' opacity='.85'/%3E%3Cpath d='M40 240q80-70 160-20t160-40' stroke='%23fff7ed' stroke-width='10' fill='none' stroke-linecap='round' opacity='.8'/%3E%3C/svg%3E" alt="脚心安放计划第一季专题封面">
+          <span class="tx-special-state">更新中 · 已上线 8 期</span>
+          <h3>脚心安放计划 第一季</h3>
+          <p>邀请 8 位创作者，用 60 秒记录一件让自己安静下来的小事。揉面、浇花、擦桌子都算。</p>
+        </article>
+        <article class="tx-special-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23134e4a'/%3E%3Crect x='60' y='120' width='280' height='16' rx='8' fill='%235eead4' opacity='.8'/%3E%3Crect x='60' y='160' width='180' height='16' rx='8' fill='%2399f6e4' opacity='.6'/%3E%3Ccircle cx='320' cy='80' r='40' fill='%23fbbf24'/%3E%3C/svg%3E" alt="深夜电台影像化企划专题封面">
+          <span class="tx-special-state">筹备中 · 12 月上线</span>
+          <h3>深夜电台·影像化</h3>
+          <p>把听众来信读成画面。第一批 6 个故事已完成脚本，正在等待合适的拍摄天气。</p>
+        </article>
+        <article class="tx-special-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%2378350f'/%3E%3Ccircle cx='120' cy='150' r='52' fill='%23fde68a'/%3E%3Ccircle cx='270' cy='130' r='38' fill='%23fca5a5'/%3E%3Cpath d='M60 260q140-60 280 0' stroke='%23fcd34d' stroke-width='9' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="手作人档案企划专题封面">
+          <span class="tx-special-state">长期企划 · 持续更新</span>
+          <h3>手作人档案</h3>
+          <p>记录那些把一件事重复十年的人。木作、金工、织补、制香，每期一位，认真做人物。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="tx-section" id="tx-creators">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">创作者矩阵</span>
+        <h2>把作品交给他（她）们，<em>放心</em></h2>
+        <p>点击任意卡片可以查看创作者档案与代表作品</p>
+      </div>
+      <div class="tx-creator-grid">
+        <article class="tx-creator" data-creator="软痒编辑部|从 2023 年开始运营，专注即兴轻喜剧与幕后记录。代表作《被挠到笑场的三十秒》系列，累计播放 420 万。擅长在无剧本状态下捕捉真实反应，剪辑风格轻快，结尾常留一个安静的空镜。" data-modal-open>
+          <div class="tx-creator-top">
+            <span class="tx-avatar lg" style="background:#f97316">软</span>
+            <div><h3>软痒编辑部</h3><span>即兴 · 幕后记录</span></div>
+          </div>
+          <p>把“笑”当作一种可以被设计、也可以被等待的东西。擅长无剧本拍摄与现场抓取。</p>
+          <div class="tx-creator-foot"><span>作品 <b>86</b> 支</span><span>关注 <b>12.4万</b></span></div>
+        </article>
+        <article class="tx-creator" data-creator="线团不眠|手作与旧物修复创作者，做过 7 年服装打版师。2024 年加入挠脚心，代表作《把旧毛衣拆成一条围巾》《补一只用了十二年的帆布包》。拍摄全部使用自然光，坚持一镜到底完成核心工序。" data-modal-open>
+          <div class="tx-creator-top">
+            <span class="tx-avatar lg" style="background:#0f766e">线</span>
+            <div><h3>线团不眠</h3><span>手作 · 旧物修复</span></div>
+          </div>
+          <p>自然光、一镜到底，把工序完整地交还给观众。旧物在她手里总能再活一次。</p>
+          <div class="tx-creator-foot"><span>作品 <b>41</b> 支</span><span>关注 <b>8.7万</b></span></div>
+        </article>
+        <article class="tx-creator" data-creator="橘座观察室|专注猫咪日常的影像记录者，家里有四只救助来的橘猫。代表作《橘猫的一天》系列，坚持不配音、不加特效，只保留环境声。希望用最朴素的方式，让人停下来看一只猫发呆。" data-modal-open>
+          <div class="tx-creator-top">
+            <span class="tx-avatar lg" style="background:#d97706">橘</span>
+            <div><h3>橘座观察室</h3><span>萌宠 · 治愈影像</span></div>
+          </div>
+          <p>不配音，不加特效，只留下猫的脚步与阳光。让观看本身成为一种休息。</p>
+          <div class="tx-creator-foot"><span>作品 <b>67</b> 支</span><span>关注 <b>15.9万</b></span></div>
+        </article>
+        <article class="tx-creator" data-creator="深聊四十分钟|人物访谈栏目，由前杂志编辑主持。每期邀请一位不同领域的普通人，聊 40 分钟不打断。话题围绕放松、边界、亲密关系与日常秩序。栏目坚持完整呈现，不做情绪化剪辑。" data-modal-open>
+          <div class="tx-creator-top">
+            <span class="tx-avatar lg" style="background:#4f46e5">深</span>
+            <div><h3>深聊四十分钟</h3><span>人物访谈 · 长内容</span></div>
+          </div>
+          <p>40 分钟不打断的完整对话。相信耐心本身就是一种内容品质。</p>
+          <div class="tx-creator-foot"><span>作品 <b>29</b> 支</span><span>关注 <b>6.2万</b></span></div>
+        </article>
+        <article class="tx-creator" data-creator="江城记录组|城市声音与街景记录团队，成员三人，分别负责收音、拍摄与后期。代表作《城市探索》系列、《菜市场里的三条呼吸声》。擅用长镜头与现场声，作品常被用作放松音频。" data-modal-open>
+          <div class="tx-creator-top">
+            <span class="tx-avatar lg" style="background:#0891b2">城</span>
+            <div><h3>江城记录组</h3><span>城市探索 · 声音采集</span></div>
+          </div>
+          <p>带着录音笔走城市。相信一座城市最早的声音，比任何文案都动人。</p>
+          <div class="tx-creator-foot"><span>作品 <b>53</b> 支</span><span>关注 <b>9.1万</b></span></div>
+        </article>
+        <article class="tx-creator" data-creator="剪辑台老周|从业十年的剪辑师，现为挠脚心常驻讲师。擅长节奏控制与声音设计，课程以实用著称，不讲空理论。代表作《新手剪辑》系列，被社区称为“看得懂、用得上”的教程。" data-modal-open>
+          <div class="tx-creator-top">
+            <span class="tx-avatar lg" style="background:#7c3aed">剪</span>
+            <div><h3>剪辑台老周</h3><span>教程干货 · 剪辑</span></div>
+          </div>
+          <p>十年剪辑经验，只讲能马上用上的技巧。课程被社区称为“看得懂、用得上”。</p>
+          <div class="tx-creator-foot"><span>作品 <b>74</b> 支</span><span>关注 <b>11.3万</b></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="tx-section" style="background:linear-gradient(180deg,#fff,#fff6ea)">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">故事随笔</span>
+        <h2>镜头之外，<em>写下来的那些</em></h2>
+        <p>文字与影像互为注脚，记录拍摄现场之外的细微感受</p>
+      </div>
+      <div class="tx-story-grid">
+        <article class="tx-story">
+          <h3>第一次被“挠”到笑出声</h3>
+          <p>拍《软痒现场》第一期时，我们谁也不知道该怎么做。摄影师说，那就先玩十分钟。结果那十分钟里，所有人都在笑，机器一直开着。后来我们剪掉了大部分，只留下三个反应。观众说，那三个反应特别真。我这才明白，所谓软痒，不是设计出来的，是允许它发生。</p>
+          <footer>—— 软痒编辑部 · 拍摄手记</footer>
+        </article>
+        <article class="tx-story">
+          <h3>拆一件旧毛衣要多久</h3>
+          <p>那件毛衣是我二十岁那年织的，针脚歪得厉害。拆的时候线一直断，我拆了三个下午。剪出来的片子里只有十四分钟，但观众在评论里说，看见线团一圈圈变小，心里也跟着松了。原来大家要的不是结果，是有人愿意慢慢地做一件没用的事。</p>
+          <footer>—— 线团不眠 · 创作随笔</footer>
+        </article>
+        <article class="tx-story">
+          <h3>凌晨五点的步道没有台词</h3>
+          <p>我们原本准备了一段旁白，写好又删了。江边的风、扫地的沙沙声、远处第一班公交的刹车声，这些东西自己会说话。成片发出去后，有用户留言说，他把音量调到很小，当成了助眠的声音。这大概是我今年收到最好的一句反馈。</p>
+          <footer>—— 江城记录组 · 城市笔记</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="tx-section">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">作品墙</span>
+        <h2>来自社区的<em>影像碎片</em></h2>
+        <p>「脚心安放计划」用户投稿精选，尺寸不一，心情也不一</p>
+      </div>
+      <div class="tx-wall">
+        <figure class="w-big">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23fed7aa'/%3E%3Ccircle cx='420' cy='120' r='80' fill='%23fff7ed' opacity='.85'/%3E%3Cpath d='M60 330q120-90 240-20t240-40' stroke='%23c2410c' stroke-width='14' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='160' cy='120' r='34' fill='%23f97316'/%3E%3C/svg%3E" alt="脚心安放计划投稿：黄昏时分的厨房窗台">
+          <figcaption>黄昏厨房 · 投稿者 阿柑</figcaption>
+        </figure>
+        <figure class="w-tall">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%23065f46'/%3E%3Cpath d='M40 340q40-140 110-140t110 140' fill='%23a7f3d0' opacity='.7'/%3E%3Ccircle cx='150' cy='120' r='40' fill='%23fef3c7'/%3E%3C/svg%3E" alt="脚心安放计划投稿：阳台上的绿植与晨光">
+          <figcaption>阳台绿意 · 投稿者 小满</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23bfdbfe'/%3E%3Crect x='60' y='90' width='180' height='70' rx='10' fill='%23f8fafc'/%3E%3Ccircle cx='100' cy='70' r='22' fill='%23fbbf24'/%3E%3C/svg%3E" alt="脚心安放计划投稿：书桌一角与一杯温水">
+          <figcaption>书桌一角 · 投稿者 老木</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23fecdd3'/%3E%3Ccircle cx='150' cy='110' r='58' fill='%23fff1f2'/%3E%3Cpath d='M120 100q12 10 24 0M156 100q12 10 24 0' stroke='%23f43f5e' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="脚心安放计划投稿：一只睡着的白猫">
+          <figcaption>午后白猫 · 投稿者 Nana</figcaption>
+        </figure>
+        <figure class="w-tall">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%231e3a8a'/%3E%3Ccircle cx='150' cy='150' r='90' fill='%2393c5fd' opacity='.5'/%3E%3Cpath d='M30 340q120-70 240 0' stroke='%23fbbf24' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="脚心安放计划投稿：夜跑时经过的天桥">
+          <figcaption>夜行天桥 · 投稿者 陈屿</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23fde68a'/%3E%3Cpath d='M30 160h240' stroke='%23b45309' stroke-width='8'/%3E%3Ccircle cx='80' cy='120' r='24' fill='%23fff7ed'/%3E%3Ccircle cx='150' cy='110' r='30' fill='%23fff7ed'/%3E%3Ccircle cx='220' cy='124' r='20' fill='%23fff7ed'/%3E%3C/svg%3E" alt="脚心安放计划投稿：摊开晾晒的毛线团">
+          <figcaption>晾晒毛线 · 投稿者 线团不眠</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="tx-section tx-review">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">社区口碑</span>
+        <h2>他们这样评价<em>挠脚心</em></h2>
+        <p>来自用户、创作者与合作方的真实反馈，语气不同，态度相近</p>
+      </div>
+      <div class="tx-review-grid">
+        <article class="tx-review-item">
+          <div class="tx-stars">★★★★★</div>
+          <p>我本来是来找乐子的，结果被《脚心安放》系列圈粉。晚上加班回来放一期，什么都不用想，就看着别人慢慢地做一件事，反而更容易睡着。</p>
+          <div class="tx-review-user"><span class="tx-avatar" style="background:#f97316">周</span><span><b>周末不加班</b> · 注册两年</span></div>
+        </article>
+        <article class="tx-review-item">
+          <div class="tx-stars">★★★★★</div>
+          <p>剪辑课是真有用。老周不讲虚的，直接给时间线，告诉你哪一刀该剪、为什么。我照着改了一条片子，第二天数据就变了。</p>
+          <div class="tx-review-user"><span class="tx-avatar" style="background:#7c3aed">阿</span><span><b>阿晟拍片记</b> · 社区创作者</span></div>
+        </article>
+        <article class="tx-review-item">
+          <div class="tx-stars">★★★★☆</div>
+          <p>内容很喜欢，就是希望深聊系列能出个纯音频版，通勤路上听更合适。另外希望专题的更新能再规律一点，等得有点久。</p>
+          <div class="tx-review-user"><span class="tx-avatar" style="background:#0891b2">林</span><span><b>林间有风</b> · 老用户</span></div>
+        </article>
+        <article class="tx-review-item">
+          <div class="tx-stars">★★★★★</div>
+          <p>作为合作方，最有感触的是他们的流程。每一条涉及互动的片子都会提前沟通边界，确认同意后才拍。这种认真，在行业里并不常见。</p>
+          <div class="tx-review-user"><span class="tx-avatar" style="background:#0f766e">合</span><span><b>青禾社区中心</b> · 合作机构</span></div>
+        </article>
+        <article class="tx-review-item">
+          <div class="tx-stars">★★★★★</div>
+          <p>第一次投稿的时候特别紧张，怕被笑。结果编辑给我写了满满一页修改建议，标到秒。那一刻我就决定，以后都在这里发了。</p>
+          <div class="tx-review-user"><span class="tx-avatar" style="background:#d97706">小</span><span><b>小满的阳台</b> · 新人创作者</span></div>
+        </article>
+        <article class="tx-review-item">
+          <div class="tx-stars">★★★★☆</div>
+          <p>评论区氛围确实好，很少有人吵架。偶尔有不同意见也能好好说话。希望以后多一些线下的观影活动，线上看久了也想见见真人。</p>
+          <div class="tx-review-user"><span class="tx-avatar" style="background:#4f46e5">半</span><span><b>半糖去冰</b> · 活跃用户</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="tx-section" id="tx-faq">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-tagline">帮助中心</span>
+        <h2>你可能会<em>想知道</em>的</h2>
+        <p>关于内容、投稿、版权与合作的常见问题</p>
+      </div>
+      <div class="tx-faq">
+        <details>
+          <summary>挠脚心是什么类型的内容平台？</summary>
+          <p>挠脚心是一个以软痒趣味、治愈日常与人物深聊为核心的原创视频品牌社区。我们不追逐极端刺激，更在意内容是否让人放松、是否有真实的细节。平台主要包含「软痒现场」「脚心安放」「深聊四十分钟」三条主线，以及城市探索、手作、萌宠、教程等扩展内容。</p>
+        </details>
+        <details>
+          <summary>我想投稿，需要满足什么条件？</summary>
+          <p>没有粉丝门槛，也不需要专业设备。我们更看重选题的真实性与完成度。建议首次投稿从 30 秒到 3 分钟的内容开始，画面稳定、声音清楚即可。涉及他人出镜或身体互动的题材，必须提供出镜者的明确同意说明，这是硬性要求。</p>
+        </details>
+        <details>
+          <summary>投稿后多久会收到反馈？</summary>
+          <p>一般在 7 个工作日内。若进入复审，编辑会通过站内信或邮件给出具体的修改建议，可能包含时间点标注。未通过的作品也可以按建议修改后再次投递，我们不设次数限制。</p>
+        </details>
+        <details>
+          <summary>平台上的音乐和素材可以下载使用吗？</summary>
+          <p>可以。挠脚心建立了正版素材库，站内标注为“可商用”的音乐与音效，签约创作者可在授权范围内下载使用。使用前请阅读对应的授权说明，二次创作需保留来源标注。超出授权范围的使用，需要单独申请。</p>
+        </details>
+        <details>
+          <summary>涉及身体互动的影像有什么规范？</summary>
+          <p>所有涉及身体接触的内容必须建立在充分沟通与明确同意的基础上，拍摄前需完成场景说明，拍摄中保留随时终止的权利，成片前进行一次内容复核。我们拒绝任何可能引发不适的过度呈现，也不接受以猎奇为卖点的投稿。这条规则不因流量而调整。</p>
+        </details>
+        <details>
+          <summary>如何加入「脚心安放计划」？</summary>
+          <p>每期开放期间，在投稿页面选择对应活动标签即可参与。第二期主题为“一分钟的安静”，接受 60 秒以内的竖屏或横屏记录。入围作品会在专题页面展示，并获得平台推荐与创作支持。</p>
+        </details>
+        <details>
+          <summary>品牌合作与机构合作怎么联系？</summary>
+          <p>可以通过页面底部的合作邮箱与我们联系，说明合作类型、时间与预算范围。我们接受内容共创、场地合作、线下工作坊等形式的合作，所有合作内容会明确标注，不接受影响内容独立性的商业植入。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系投稿 -->
+  <section class="tx-contact" id="tx-contact">
+    <div class="tx-wrap">
+      <div>
+        <h2>把你的作品，投递到这里</h2>
+        <p>无论是第一次拍片的素人，还是已经拍了十年的老手，挠脚心都愿意认真看一遍你的作品。我们提供编辑反馈、拍摄支持与正版素材，也愿意和你一起把想法做完。</p>
+        <div class="tx-contact-actions">
+          <button class="tx-btn tx-btn-light" type="button" data-modal="submit">立即投稿</button>
+          <button class="tx-btn tx-btn-line" type="button" data-modal="share">分享给朋友</button>
+          <button class="tx-btn tx-btn-line" type="button" data-modal="report">反馈与举报</button>
+        </div>
+      </div>
+      <div class="tx-contact-info">
+        <div class="tx-contact-item"><b>投稿邮箱</b>create@naojiaoxin.studio</div>
+        <div class="tx-contact-item"><b>合作咨询</b>partner@naojiaoxin.studio（工作日 10:00–18:00）</div>
+        <div class="tx-contact-item"><b>社区地址</b>江城创意园 B 栋 3 层 · 挠脚心影像空间（需预约）</div>
+        <div class="tx-contact-item"><b>官方发布</b>所有企划与更新以本官方网站公告为准</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="tx-footer">
+  <div class="tx-wrap">
+    <div class="tx-footer-grid">
+      <div class="tx-footer-brand">
+        <h4>挠脚心 NAOJIAOXIN STUDIO</h4>
+        <p>挠脚心官方网站，是一个以软痒趣味、治愈日常与人物深聊为核心的原创视频品牌社区。我们持续运营高品质内容生态，尊重创作者，也尊重每一位观众的注意力。</p>
+        <div class="tx-footer-tags">
+          <span>官方网站</span><span>原创内容</span><span>正版素材</span><span>高清影像</span><span>持续运营</span>
+        </div>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="#tx-home">品牌首页</a></li>
+          <li><a href="#tx-focus">焦点影像</a></li>
+          <li><a href="#tx-feed">视频社区</a></li>
+          <li><a href="#tx-itinerary">专题企划</a></li>
+          <li><a href="#tx-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#tx-contact">作品投稿</a></li>
+          <li><a href="#tx-faq">帮助中心</a></li>
+          <li><a href="#tx-creators">创作者支持</a></li>
+          <li><a href="#tx-contact">品牌合作</a></li>
+          <li><a href="#tx-intro">品牌故事</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li>企业名称：挠脚心影像文化有限公司</li>
+          <li>平台定位：原创视频品牌社区</li>
+          <li>内容方向：软痒 · 安放 · 深聊</li>
+          <li>更新节奏：每周三、周六</li>
+          <li>备案号：江 ICP 备 2026 号-0419</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tx-footer-bottom">
+      <span>© 2026 挠脚心影像文化有限公司 · 版权所有</span>
+      <span>本官方网站内容均为原创或已获授权 · 尊重边界，友善交流 · 持续运营中</span>
+    </div>
+  </div>
+</footer>
+
+<button class="tx-top" id="txTop" aria-label="回到顶部">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<div class="tx-toast" id="txToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="tx-modal" id="txModalSubmit" role="dialog" aria-modal="true" aria-labelledby="txModalSubmitTitle">
+  <div class="tx-modal-box">
+    <button class="tx-modal-close" type="button" data-close aria-label="关闭">×</button>
+    <h3 id="txModalSubmitTitle">作品投稿</h3>
+    <p class="tx-modal-sub">填写基本信息，编辑会在 7 个工作日内查看并回复。涉及他人出镜的题材，请务必提前取得同意。</p>
+    <form id="txSubmitForm">
+      <label for="txName">昵称 / 创作者名</label>
+      <input id="txName" name="name" type="text" placeholder="你希望被怎样称呼" required>
+      <label for="txContact">联系方式</label>
+      <input id="txContact" name="contact" type="text" placeholder="邮箱或常用社交账号" required>
+      <label for="txWork">作品名称与一句话简介</label>
+      <textarea id="txWork" name="work" placeholder="例如：《阳台绿意》记录每天清晨给三盆植物浇水的五分钟" required></textarea>
+      <div class="tx-modal-actions">
+        <button class="tx-btn tx-btn-ghost" type="button" data-close>取消</button>
+        <button class="tx-btn tx-btn-main" type="submit">提交投稿</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="tx-modal" id="txModalShare" role="dialog" aria-modal="true" aria-labelledby="txModalShareTitle">
+  <div class="tx-modal-box">
+    <button class="tx-modal-close" type="button" data-close aria-label="关闭">×</button>
+    <h3 id="txModalShareTitle">分享挠脚心</h3>
+    <p class="tx-modal-sub">把让你笑出来的内容，转给最近有点累的朋友。</p>
+    <div class="tx-share-row">
+      <button type="button" data-share="微信">微信</button>
+      <button type="button" data-share="微博">微博</button>
+      <button type="button" data-share="QQ">QQ</button>
+      <button type="button" data-share="复制链接" id="txCopyLink">复制链接</button>
+    </div>
+  </div>
+</div>
+
+<!-- 反馈弹窗 -->
+<div class="tx-modal" id="txModalReport" role="dialog" aria-modal="true" aria-labelledby="txModalReportTitle">
+  <div class="tx-modal-box">
+    <button class="tx-modal-close" type="button" data-close aria-label="关闭">×</button>
+    <h3 id="txModalReportTitle">反馈与举报</h3>
+    <p class="tx-modal-sub">发现内容不合规、涉及未经同意的互动或版权问题，请告诉我们，我们会认真处理。</p>
+    <form id="txReportForm">
+      <label for="txReportType">反馈类型</label>
+      <input id="txReportType" name="type" type="text" placeholder="内容规范 / 版权 / 功能问题 / 其他" required>
+      <label for="txReportDetail">详细说明</label>
+      <textarea id="txReportDetail" name="detail" placeholder="请描述具体内容与位置，便于我们核查" required></textarea>
+      <div class="tx-modal-actions">
+        <button class="tx-btn tx-btn-ghost" type="button" data-close>取消</button>
+        <button class="tx-btn tx-btn-main" type="submit">提交反馈</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 创作者弹窗 -->
+<div class="tx-modal" id="txModalCreator" role="dialog" aria-modal="true" aria-labelledby="txModalCreatorTitle">
+  <div class="tx-modal-box">
+    <button class="tx-modal-close" type="button" data-close aria-label="关闭">×</button>
+    <h3 id="txModalCreatorTitle">创作者档案</h3>
+    <p class="tx-modal-sub" id="txModalCreatorText">加载中…</p>
+    <div class="tx-modal-actions">
+      <button class="tx-btn tx-btn-ghost" type="button" data-close>关闭</button>
+      <button class="tx-btn tx-btn-main" type="button" id="txFollowBtn">关注这位创作者</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('txToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2000);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('txBurger');
+  var nav = document.getElementById('txNav');
+  if (burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A'){
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索 */
+  var searchInput = document.getElementById('txSearchInput');
+  var searchBtn = document.getElementById('txSearchBtn');
+  var feedback = document.getElementById('txSearchFeedback');
+  var pool = ['软痒现场','脚心安放计划','手作旧物修复','深聊四十分钟','城市声音地图','橘猫的一天','新手剪辑教程','暖冬特辑','人像访谈','萌宠日常','边界与同意'];
+
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if (!q){
+      feedback.innerHTML = '<li>试试输入：软痒 / 手作 / 城市 / 访谈</li>';
+      feedback.classList.add('on');
+      return;
+    }
+    var hits = pool.filter(function(item){ return item.indexOf(q) > -1; });
+    if (!hits.length){
+      hits = pool.slice(0,4);
+      feedback.innerHTML = '<li>没有完全匹配“' + q.replace(/</g,'') + '”，为你推荐：</li>' +
+        hits.map(function(h){ return '<li>' + h + '</li>'; }).join('');
+    } else {
+      feedback.innerHTML = hits.map(function(h){ return '<li>' + h + '</li>'; }).join('');
+    }
+    feedback.classList.add('on');
+  }
+  if (searchBtn){
+    searchBtn.addEventListener('click', doSearch);
+  }
+  if (searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if (e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    searchInput.addEventListener('focus', function(){
+      if (!searchInput.value){ feedback.innerHTML = '<li>热门：脚心安放计划 / 软痒现场 / 城市声音地图</li>'; }
+      feedback.classList.add('on');
+    });
+    document.addEventListener('click', function(e){
+      if (!e.target.closest('.tx-search')){ feedback.classList.remove('on'); }
+    });
+  }
+  if (feedback){
+    feedback.addEventListener('click', function(e){
+      if (e.target.tagName === 'LI'){
+        var t = e.target.textContent;
+        if (searchInput){
+          searchInput.value = t.indexOf('推荐') > -1 ? '' : t;
+          toast('已填入搜索词：' + (searchInput.value || '热门内容'));
+          feedback.classList.remove('on');
+        }
+      }
+    });
+  }
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-like]');
+    if (likeBtn){
+      e.preventDefault();
+      var b = likeBtn.querySelector('b');
+      var isOn = likeBtn.classList.toggle('on');
+      if (b){
+        var raw = b.textContent.replace(/[^\d.]/g,'');
+        var num = parseFloat(raw) || 0;
+        var suffix = /k/i.test(b.textContent) ? 'k' : '';
+        num = isOn ? num + 1 : Math.max(0, num - 1);
+        b.textContent = (suffix ? num.toFixed(1) : String(num)) + suffix;
+      }
+      toast(isOn ? '已点赞，谢谢你的喜欢' : '已取消点赞');
+      return;
+    }
+    var saveBtn = e.target.closest('[data-save]');
+    if (saveBtn){
+      e.preventDefault();
+      var on = saveBtn.classList.toggle('on');
+      toast(on ? '已加入收藏，稍后可在个人中心查看' : '已取消收藏');
+    }
+  });
+
+  /* 弹窗 */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if (m){ m.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  }
+  function closeAll(){
+    document.querySelectorAll('.tx-modal.open').forEach(function(m){ m.classList.remove('open'); });
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var t = btn.getAttribute('data-modal');
+      if (t === 'submit') openModal('txModalSubmit');
+      else if (t === 'share') openModal('txModalShare');
+      else if (t === 'report') openModal('txModalReport');
+    });
+  });
+  document.querySelectorAll('[data-close]').forEach(function(btn){
+    btn.addEventListener('click', closeAll);
+  });
+  document.querySelectorAll('.tx-modal').forEach(function(m){
+    m.addEventListener('click', function(e){ if (e.target === m) closeAll(); });
+  });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeAll(); });
+
+  /* 创作者弹窗 */
+  document.querySelectorAll('[data-creator]').forEach(function(card){
+    card.addEventListener('click', function(){
+      var data = card.getAttribute('data-creator') || '';
+      var parts = data.split('|');
+      document.getElementById('txModalCreatorTitle').textContent = parts[0] || '创作者档案';
+      document.getElementById('txModalCreatorText').textContent = parts[1] || '';
+      var f = document.getElementById('txFollowBtn');
+      f.textContent = '关注这位创作者';
+      f.disabled = false;
+      f.style.opacity = '1';
+      openModal('txModalCreator');
+    });
+  });
+  var followBtn = document.getElementById('txFollowBtn');
+  if (followBtn){
+    followBtn.addEventListener('click', function(){
+      if (followBtn.disabled) return;
+      followBtn.textContent = '已关注 ✓';
+      followBtn.disabled = true;
+      followBtn.style.opacity = '.7';
+      toast('关注成功，后续更新会提醒你');
+    });
+  }
+
+  /* 表单 */
+  var submitForm = document.getElementById('txSubmitForm');
+  if (submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeAll();
+      submitForm.reset();
+      toast('投稿已收到，编辑会在 7 个工作日内与你联系');
+    });
+  }
+  var reportForm = document.getElementById('txReportForm');
+  if (reportForm){
+    reportForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeAll();
+      reportForm.reset();
+      toast('反馈已提交，感谢你帮助我们维护社区规范');
+    });
+  }
+
+  /* 分享 */
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var ch = btn.getAttribute('data-share');
+      if (ch === '复制链接'){
+        copyLink();
+      } else {
+        toast('已准备好分享到' + ch + '，请在新窗口完成发送');
+        closeAll();
+      }
+    });
+  });
+  function copyLink(){
+    var url = location.href;
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){
+        toast('链接已复制，去分享给朋友吧');
+        closeAll();
+      }).catch(function(){
+        fallbackCopy(url);
+      });
+    } else {
+      fallbackCopy(url);
+    }
+  }
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); toast('链接已复制，去分享给朋友吧'); }
+    catch(err){ toast('复制失败，请手动复制浏览器地址'); }
+    document.body.removeChild(ta);
+    closeAll();
+  }
+  var copyBtn = document.getElementById('txCopyLink');
+  if (copyBtn){ copyBtn.addEventListener('click', copyLink); }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('txTop');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 460){ topBtn.classList.add('show'); }
+    else { topBtn.classList.remove('show'); }
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  /* 数字滚动 */
+  function animateCount(){
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      if (el.dataset.done) return;
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 40 && rect.bottom > 0){
+        el.dataset.done = '1';
+        var target = parseFloat(el.getAttribute('data-count'));
+        var dec = (String(target).split('.')[1] || '').length;
+        var start = 0, dur = 1200, t0 = performance.now();
+        function step(t){
+          var p = Math.min(1, (t - t0) / dur);
+          var v = target * (1 - Math.pow(1 - p, 3));
+          el.textContent = v.toFixed(dec);
+          if (p < 1) requestAnimationFrame(step);
+          else el.textContent = dec ? target.toFixed(dec) : target;
+        }
+        requestAnimationFrame(step);
+      }
+    });
+  }
+  window.addEventListener('scroll', animateCount);
+  window.addEventListener('load', animateCount);
+
+})();
+</script>
+</body>
+            </html>
